@@ -4,11 +4,15 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
 brew 'zsh-completions'
+
+# Install Termianl Utilities
+brew 'autojump'
+brew 'jump'
+brew 'thefuck'
 
 # Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
@@ -32,11 +36,21 @@ brew 'mas'
 brew 'node'
 brew 'trash'
 brew 'wget'
+brew 'openssl'
+brew 'cmake'
 
 # Development
-brew 'php71', args: ['with-debug']
-brew 'php71-intl'
-brew 'mariadb'
+brew 'vim'
+brew 'elasticsearch'
+brew 'gdbm'
+brew 'heroku'
+brew 'postgresql'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew 'rabbitmq'
+brew 'watchman'
+brew 'yarn'
+
 
 # Apps
 cask 'aerial'
@@ -47,22 +61,20 @@ cask 'dropbox'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'gpgtools'
 cask 'iterm2'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
 cask 'shuttle'
-cask 'slack'
-cask 'sublime-text'
-cask 'torbrowser'
-cask 'tower'
-cask 'transmit'
+cask 'github-desktop'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'vlc'
+cask 'dnscrypt'
+cask 'spotifree'
+cask 'spotify'
+cask 'psequel'
+cask 'unrarx'
+cask 'skype'
+cask 'telegram'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -78,12 +90,7 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
 mas 'Gapplin', id: 768053424
+mas 'Telegram', id: 747648890
 mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+mas 'Flycut (Clipboard manager)', id: 442160987

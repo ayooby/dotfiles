@@ -17,16 +17,6 @@ brew bundle
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet tightenco/jigsaw spatie/http-status-check bramus/mixed-content-scan laravel/spark-installer
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
 # Install global NPM packages
 npm install --global yarn
 
@@ -37,3 +27,7 @@ mkdir $HOME/Sites
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
+
+# Install VIM setting and Plugins
+ln -s ~/.dotfiles/vimrc .vimrc
+vim +PlugInstall +qall now

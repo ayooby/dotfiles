@@ -4,7 +4,6 @@ alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
 alias weather="curl -4 http://wttr.in"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
@@ -12,8 +11,12 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 
-# Laravel
-alias a="php artisan"
+# Python
+alias prun="python manage.py runserver"
+alias shell="python manage.py shell"
+
+# Node.Js
+alias nrun="npm run dev"
 
 # Vagrant
 alias v="vagrant global-status"
