@@ -75,6 +75,7 @@ cask 'psequel'
 cask 'unrarx'
 cask 'skype'
 cask 'telegram'
+cask 'spectacle'
 
 # Quicklook
 cask 'qlcolorcode'
