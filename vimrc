@@ -19,7 +19,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-surround'
 Plugin 'glench/vim-jinja2-syntax'
 Plugin 'kylef/apiblueprint.vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'othree/html5.vim'
 Plugin 'isRuslan/vim-es6'
@@ -33,7 +32,10 @@ Plugin 'w0rp/ale'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'peterhurford/send.vim'
+Plugin 'joom/vim-commentary'
+Plugin 'junegunn/fzf.vim'
 
+set rtp+=/usr/local/opt/fzf
 call vundle#end()
 filetype plugin indent on
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -109,9 +111,11 @@ set guifont=Hack:h17
 " NERDTree key
 map <leader>nn :NERDTreeToggle<CR>
 
-" Ctrl-P plugin
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<leader>p'
+
+" Fuzzy short cuts
+nmap ; :Buffers<CR>
+nmap <Leader>p :Files<CR>
+nmap <Leader>r :Tags<CR>
 
 " Remap dash to colon, because it's quicker
 nnoremap - :
