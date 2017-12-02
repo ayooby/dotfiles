@@ -74,8 +74,7 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-source ~/.dotfiles/spaceship.zsh-theme
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH_CUSTOM/spaceship.zsh-theme
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
