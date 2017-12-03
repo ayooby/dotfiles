@@ -30,4 +30,6 @@ source .macos
 
 # Install VIM setting and Plugins
 ln -s ~/.dotfiles/vimrc .vimrc
+mkdir ~/.vim/_swap
+mkdir ~/.vim/_backup
 vim +PlugInstall +qall now
