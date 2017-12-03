@@ -14,6 +14,7 @@ brew 'autojump'
 brew 'jump'
 brew 'thefuck'
 brew 'mtr'
+brew 'fzf'
 
 # Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
