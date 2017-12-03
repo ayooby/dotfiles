@@ -71,10 +71,6 @@ au Filetype html,xml,xsl,hbs source ~/.vim/scripts/closetag.vim
 
 let mapleader = ","
 
-set backupdir=~/.vimtmpdir,.
-set directory=~/.vimtmpdir,.
-set undodir=~/.vimtmpdir,.
-
 " Appearance
 set background=dark
 set fillchars=
