@@ -8,8 +8,9 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
+alias prj="cd $HOME/Projects"
+alias ..="cd .."
+alias ...="cd ../.."
 
 # Python
 alias prun="python manage.py runserver"
