@@ -78,9 +78,6 @@ let g:seoul256_background = 235
 colo seoul256
 
 
-" Crpl Plugin ignore node modules
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn|pyc))$'
-
 " Hide all those pesky pyc files
 let NERDTreeIgnore = ['\.pyc$']
 
