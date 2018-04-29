@@ -5,10 +5,6 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 
-# Install ZSH
-brew 'zsh'
-brew 'zsh-completions'
-
 # Install Termianl Utilities
 brew 'autojump'
 brew 'jump'
@@ -52,6 +48,7 @@ brew 'pyenv-virtualenv'
 brew 'rabbitmq'
 brew 'watchman'
 brew 'yarn'
+brew 'fish'
 
 
 # Apps

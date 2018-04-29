@@ -14,15 +14,12 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-# Make ZSH the default shell environment
-chsh -s $(which zsh)
-
 # Install global NPM packages
 npm install --global yarn
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+mkdir $HOME/Projects
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

@@ -6,7 +6,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'mileszs/ack.vim'
 Plugin 'valloric/youcompleteme'
 Plugin 'raimondi/delimitmate'
 Plugin 'maxmellon/vim-jsx-pretty'
@@ -14,7 +13,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-surround'
 Plugin 'glench/vim-jinja2-syntax'
@@ -22,12 +20,8 @@ Plugin 'kylef/apiblueprint.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'othree/html5.vim'
 Plugin 'isRuslan/vim-es6'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
-Plugin 'othree/javascript-syntax.vim'
 Plugin 'w0rp/ale'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ternjs/tern_for_vim'
@@ -259,8 +253,6 @@ function MyTabLine()
         return s
 endfunction
 
-"save vim file in vime folder
-" ~/.vimrc file
 
 " swap files (.swp) in a common location
 " // means use the file's full path
@@ -279,4 +271,3 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrcimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
-
