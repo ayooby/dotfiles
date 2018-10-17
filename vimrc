@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'valloric/youcompleteme'
 Plugin 'raimondi/delimitmate'
 Plugin 'maxmellon/vim-jsx-pretty'
@@ -28,14 +27,16 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'peterhurford/send.vim'
 Plugin 'joom/vim-commentary'
 Plugin 'junegunn/fzf.vim'
+Plugin 'Raimondi/delimitMate'
 
 set rtp+=/usr/local/opt/fzf
 call vundle#end()
 filetype plugin indent on
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-f>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+set runtimepath+=~/.vim/snippets
 
 "enable keyboard shortcuts
 let g:tern_map_keys=1
