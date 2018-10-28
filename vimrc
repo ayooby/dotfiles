@@ -28,6 +28,7 @@ Plugin 'peterhurford/send.vim'
 Plugin 'joom/vim-commentary'
 Plugin 'junegunn/fzf.vim'
 Plugin 'Raimondi/delimitMate'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 set rtp+=/usr/local/opt/fzf
 call vundle#end()
@@ -46,6 +47,9 @@ let g:tern_show_argument_hints='on_hold'
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" md preview
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
 
 let g:vim_jsx_pretty_colorful_config=1
 
