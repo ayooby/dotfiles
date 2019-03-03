@@ -29,6 +29,8 @@ Plugin 'joom/vim-commentary'
 Plugin 'junegunn/fzf.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'posva/vim-vue'
+Plugin 'vim-scripts/closetag.vim'
 
 set rtp+=/usr/local/opt/fzf
 call vundle#end()
@@ -66,7 +68,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-au Filetype html,xml,xsl,hbs source ~/.vim/scripts/closetag.vim
+au Filetype html,xml,xsl,hbs source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 let mapleader = ","
 
