@@ -3,6 +3,11 @@
 ## What Is This?
 This is my dotfiles configs it helps me to have a backup from them and you can take a look at it and help me to make this Repo be better.
 
+## Preinstallation
+1. [fzf](https://github.com/junegunn/fzf)
+2. [AG](https://github.com/ggreer/the_silver_searcher)
+3. [pathogen](https://github.com/tpope/vim-pathogen)
+
 
 ## A Fresh macOS Setup
 
