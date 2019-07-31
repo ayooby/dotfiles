@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'machakann/vim-swap'
 Plugin 'valloric/youcompleteme'
 Plugin 'raimondi/delimitmate'
 Plugin 'maxmellon/vim-jsx-pretty'
@@ -77,6 +78,9 @@ set background=dark
 set fillchars=
 let g:seoul256_background = 235
 colo seoul256
+
+" Split Lines
+nnoremap z i<CR><Esc>
 
 
 " Hide all those pesky pyc files
